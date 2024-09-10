@@ -1,5 +1,8 @@
-from django.http import HttpResponse
+from django.shortcuts import render
+
+def home(request):
+    return render(request, "blog/home.html")
 
 
-def index(request):
-    return HttpResponse("This is the blog index")
+def about(request):
+    return render(request, "blog/about.html", {'title':'About'})
