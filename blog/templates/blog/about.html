@@ -1,4 +1,38 @@
 {% extends "blog/base.html" %}
 {% block content %}
-    <p>This is the about page with the bio </p>
+<div class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
+    <div class="justify-content-center align-items-center" style="width:80%;margin-top:1em;margin-bottom:1em;">
+        <h2>Bio</h2>
+        <p>
+            I'm a PhD student at Electrical, Computer and Energy Engineering at University of Colorado, Boulder. Prior to joining CU Boulder, I received my MS in Electrical & Computer Engineering from The Ohio State University in 2018 and my BS in Electrical & Electronics Engineering from Bilkent University in 2016.
+        </p>
+        <p>
+            My research focuses on scientific computing and computer-aided proofs with applications to information theory and more specifically the broadcast channel. The general theme of my work is to systematize and generalize theoretical work that is traditionally done manually and on a case-by-case basis. I work on designing general-purpose algorithms that are applicable to a wide range of problem settings and leveraging scientific computing to solve large-scale problems that would otherwise be intractable. These efforts lead to novel computer-aided proofs and theoretical results that are far beyond the reach of a theoretician who works solely with pen and paper, which is still the norm in the field of information theory.
+        </p>
+    </div>
+
+    <div class="justify-content-center align-items-center" style="width:80%;margin-top:1em;margin-bottom:1em;">
+        <h2>Research</h2>
+        <p>
+            The general theme of my research is building expert systems. Using my computational skills and my machine learning background, I collaborate with domain experts to help build custom domain-informed computational tools for their needs. I've had the pleasure to collaborate in a diverse set of fields with various requirements and challenges.
+        </p>
+        <div class="justify-content-center align-items-center" style="padding-left:2em;margin-top:2em;margin-bottom:1em;">
+            <h4>Computational Musicology</h4> 
+            <p>
+                On the computational side, I worked on an open source <a href="https://mtg.upf.edu/node/3538" target="_blank">a general-purpose classifier</a> for non-Western classical music traditions, with example applications to Ottoman-Turkish Makam Music, Hindustani & Carnatic Music and Jīngjù (Beijing Opera) during my internship at UPF Barcelona. I also had some exposure to music perception research during my time at Cognitive and Systematic  Musicology Lab at OSU.
+            </p>
+            <br>
+            <h4>Online Machine Learning (Multi-Armed Bandits)</h4>
+            <p>
+                My undergraduate research was focused on the multi-armed bandit problem, a fundamental problem setting in the context of reinforcement/online machine learning. I studied various settings including graph diffusion models, active learning, multi-objective optimization and contextual learning. This work led to a series of <a href="https://scholar.google.com/citations?user=vMfCqr8AAAAJ&hl=en" target="_blank">publications</a> and <a href="https://github.com/altugkarakurt/OCIMP" target="_blank">an open source simulation library</a> for the so-called influence maximization problem. In addition to the theoretical contributions I made, I was in charge of the computational work in this line of work.   
+            </p>
+            <br>
+            <h4>Atmospheric Research</h4>
+            <p>
+                More recently, I have been interested in the atmospheric sciences and had the opportunity to work on the dust concentration in the Saharan desert. This is a significant factor in the climate of a large area in Saharan Africa with far reaching ecological and social impacts. We analyzed decades long historical data to predict the dust levels and also its atmospheric consequences. Our results are summarized in a <a href="https://projectpythia.org/dust-cookbook">Pythia cookbook</a>, which is an interactive computational tutorial.
+            </p>
+        </div>
+        
+    </div>
+</div>
 {% endblock content %}
